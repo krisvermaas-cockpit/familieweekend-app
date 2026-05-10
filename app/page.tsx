@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, X, Gamepad2, Calendar, Info, Home, MapPin, Phone, Globe, ExternalLink } from "lucide-react";
+import { ChevronDown, X, Gamepad2, Calendar, Info, Home as HomeIcon, MapPin, Phone, Globe, ExternalLink } from "lucide-react";
 
 type ActivityType = "eten" | "spel" | "activiteit" | "voetbal" | "overig";
 type Tab = "programma" | "info" | "praktisch";
@@ -428,7 +428,7 @@ export default function Home() {
   const tabs: { id: Tab; icon: React.ReactNode; label: string }[] = [
     { id: "programma", icon: <Calendar size={16} />, label: "Programma" },
     { id: "info", icon: <Info size={16} />, label: "Info" },
-    { id: "praktisch", icon: <Home size={16} />, label: "Praktisch" },
+    { id: "praktisch", icon: <HomeIcon size={16} />, label: "Praktisch" },
   ];
 
   return (
